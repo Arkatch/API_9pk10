@@ -1,0 +1,10 @@
+create database route_base DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+create table transits(
+	id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	source_address TEXT NOT NULL,
+	destination_address TEXT NOT NULL,
+	distanceText TEXT NOT NULL,
+	distance INT NOT NULL,
+	price INT NOT NULL,
+	date DATE 
+);
